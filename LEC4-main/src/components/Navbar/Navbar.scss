@@ -1,0 +1,38 @@
+.site-nav {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    .nav-left {
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .brand {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+}
+
+$breakpoint-phone: 1050px;
+@media (max-width:$breakpoint-phone) {
+    .site-nav {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
